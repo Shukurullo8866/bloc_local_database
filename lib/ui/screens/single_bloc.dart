@@ -1,6 +1,7 @@
-import 'package:bloc_equatable/bloc/single_state_bloc/single_state_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../bloc/sigle_multi_example/single_state_bloc/single_state_bloc.dart';
 
 class SingleBlocPage extends StatefulWidget {
   const SingleBlocPage({Key? key}) : super(key: key);

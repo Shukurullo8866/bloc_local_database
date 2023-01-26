@@ -1,8 +1,8 @@
-import 'package:bloc_equatable/bloc/single_state_cubit/single_state_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../bloc/single_state_bloc/single_state_bloc.dart';
+import '../../bloc/sigle_multi_example/single_state_bloc/single_state_bloc.dart';
+import '../../bloc/sigle_multi_example/single_state_cubit/single_state_cubit.dart';
 
 
 

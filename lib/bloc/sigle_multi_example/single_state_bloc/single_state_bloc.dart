@@ -1,8 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
-import '../../data/model/my_response.dart';
-import '../../data/services/api_service.dart';
+import '../../../data/cart_data/model/my_response.dart';
+import '../../../data/cart_data/services/api_service.dart';
+
 
 part 'single_state_event.dart';
 part 'single_state_state.dart';
@@ -19,7 +20,7 @@ class SingleStateBloc extends Bloc<GetDataEvent, SingleState> {
       emit(SingleState(cards: myResponse.data, status: Status.ERROR , error: ''));
 
     }else{
-      emit(SingleState(error: myResponse.error, status: Status.SUCCESS, cards: []));
+      emit(SingleState(error: myResponse.error, status: Status.SUCCESS, cards: myResponse.data));
 
     }
 

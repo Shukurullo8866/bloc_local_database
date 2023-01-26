@@ -8,7 +8,8 @@ class SingleState extends Equatable {
   List? cards;
 
   SingleState({
-    required this.status,
+    required this.
+    status,
     required this.error,
     required this.cards,
   });

@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import '../../data/model/my_response.dart';
-import '../../data/services/api_service.dart';
 import 'package:meta/meta.dart';
+import '../../../data/cart_data/model/my_response.dart';
+import '../../../data/cart_data/services/api_service.dart';
 
 part 'multi_state_event.dart';
 part 'multi_state_state.dart';

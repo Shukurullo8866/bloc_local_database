@@ -1,10 +1,5 @@
-
-import 'package:bloc_equatable/bloc/multi_state_cubit/multi_state_cubit.dart';
-import 'package:bloc_equatable/bloc/single_state_cubit/single_state_cubit.dart';
-import 'package:bloc_equatable/ui/screens/multi_bloc.dart';
-import 'package:bloc_equatable/ui/screens/multi_cubit.dart';
-import 'package:bloc_equatable/ui/screens/single_bloc.dart';
-import 'package:bloc_equatable/ui/screens/single_cubit.dart';
+import 'package:bloc_equatable/ui/contact_screens/add_contact.dart';
+import 'package:bloc_equatable/ui/contact_screens/get_contacts.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -19,12 +14,13 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     List pages = [
-      MultiBlocScreen(),
-      MultiCubitPage(),
-      SingleCubitPage(),
-      SingleBlocPage(),
+      GetContactPage(),
+      AddContactPage(),
     ];
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Contacts"),
+      ),
       body: pages[currentPage],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentPage,
@@ -36,8 +32,7 @@ class _MainPageState extends State<MainPage> {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.pan_tool_alt),label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.pan_tool_alt),label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.pan_tool_alt),label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.pan_tool_alt),label: ""),
+
         ],
       ),
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../bloc/multi_state_cubit/multi_state_cubit.dart';
+
+import '../../bloc/sigle_multi_example/multi_state_cubit/multi_state_cubit.dart';
 
 
 class MultiCubitPage extends StatefulWidget {

@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
-import '../../data/model/my_response.dart';
-import '../../data/services/api_service.dart';
+import '../../../data/cart_data/model/my_response.dart';
+import '../../../data/cart_data/services/api_service.dart';
 import '../single_state_bloc/single_state_bloc.dart';
 
 
